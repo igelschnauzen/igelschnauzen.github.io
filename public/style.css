@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "unifont";
+  src: url("./GNU-Unifont-Full.ttf.woff") format("woff"), url("./GNU-Unifont-Full.ttf.svg#GNU-Unifont-Full") format("svg"), url("./GNU-Unifont-Full.ttf.eot"), url("./GNU-Unifont-Full.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "unifont", monospace;
+  background-color: black;
+  color: paleturquoise;
+}
+
+main {
+  margin: auto;
+  margin-top: 2rem;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.header {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  padding: 0.5rem;
+  border-bottom: solid 1px paleturquoise;
+}
+.header__elem {
+  margin: 0.5rem 1rem;
+  transition: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.header__elem:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.headers {
+  text-align: center;
+  margin: 2rem;
+}
+
+.text {
+  width: 75%;
+}
+.text a {
+  text-decoration: underline;
+}
+
+.card {
+  border-top: none;
+  border-bottom: none;
+  border-left: solid 1px paleturquoise;
+  border-right: solid 1px paleturquoise;
+  transition: border;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.card:hover {
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+
+.projects__card {
+  padding: 2rem;
+  margin-inline: 2rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    font-size: 1rem;
+  }
+  .header {
+    width: 90%;
+  }
+  .projects__card {
+    margin-inline: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
